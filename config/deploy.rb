@@ -12,7 +12,7 @@ set :pty,             true
 set :use_sudo,        false
 set :stage,           :production
 set :deploy_via,      :remote_cache
-
+set :deploy_to,       "/home/cis/demo_app"
 ## Defaults:
 # set :scm,           :git
 # set :branch,        :master
