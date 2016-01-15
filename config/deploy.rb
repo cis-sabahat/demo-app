@@ -1,7 +1,7 @@
 # config valid only for current version of Capistrano
 lock '3.4.0'
 # Change these
-server '192.168.2.231', :app, :web, :db, :primary => true
+server '192.168.2.231', roles: [:app, :web, :db], :primary => true 
 
 set :application,     'demo_app'
 set :repo_url,        'https://github.com/cis-sabahat/demo-app.git'
