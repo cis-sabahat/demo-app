@@ -1,0 +1,7 @@
+<%= form_for @post do |m| %>
+  <%= m.text_field :title, placeholder: 'Title' %>
+  <%= m.text_area :description, placeholder: 'Description', rows: '3' %>
+  <%= m.file_field :avatar %>
+  <%= m.submit 'Upload', id: 'fileUpload', data: { disable_with: 'Uploading' } %>
+<% end %>
+http://www.alfredo.motta.name/upload-video-files-with-rails-paperclip-and-jquery-upload-file/

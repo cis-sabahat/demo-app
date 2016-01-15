@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DemoApp</title>
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+  <![endif]-->
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <header>
+ <object type="application/x-shockwave-flash" data="http://demo.postaffiliatepro.com/accounts/default1/banners/11110003.swf?clickTAG=http%3A%2F%2Flocalhost%3A3000%2F%23a_aid%3Dabcdef13%26a_bid%3D11110003" width="468" height="60">
+    <param name="movie" value="http://demo.postaffiliatepro.com/accounts/default1/banners/11110003.swf?clickTAG=http%3A%2F%2Flocalhost%3A3000%2F%23a_aid%3Dabcdef13%26a_bid%3D11110003">
+    <param name="menu" value="false"/>
+    <param name="quality" value="best"/>
+    <param name="wmode" value="Opaque"/>
+    <param name="loop" value="false"/>
+    <a href="http://localhost:3000/#a_aid=abcdef13&amp;a_bid=11110003"><img src="" alt=""/></a>
+  </object>
+  <img style="border:0" src="http://demo.postaffiliatepro.com/scripts/imp.php?a_aid=abcdef13&amp;a_bid=11110003" width="1" height="1" alt="" />
+    <%= render "layouts/nav_bar" %>
+  </header>
+  <main role="main">
+    <%= render "layouts/flash_mgs"%>
+    <%= yield %>
+  </main>
+
+</body>
+</html>
